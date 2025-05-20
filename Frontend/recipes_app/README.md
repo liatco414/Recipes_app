@@ -19,23 +19,33 @@ A recipe management application that allows users to browse categories, view rec
 ## Installation
 
 1. **Clone the repository**:
+
     ```bash
     git clone <repository-url>
-     cd frontend cd recipes_app
-    Install dependencies:
+    cd frontend/recipes_app
     ```
 
-npm install
-Set environment variables:
-Create a .env file in the root directory with the following variable:
-VITE_API_URL=http://localhost:3000
+2. **Install dependencies**:
 
-## Run the app:
+    ```bash
+    npm install
+    ```
 
-After installing the dependencies, run the local development server:
-npm run dev
+3. **Set environment variables**:
+   Create a `.env` file in the root directory with the following variable:
 
-The app will open in the browser at http://localhost:5173.
+    ```
+    VITE_API_URL=http://localhost:3000
+    ```
+
+4. **Run the app**:
+   After installing the dependencies, run the local development server:
+
+    ```bash
+    npm run dev
+    ```
+
+    The app will open in the browser at [http://localhost:5173](http://localhost:5173).
 
 ## Folder Structure
 
@@ -50,27 +60,21 @@ src/
 │ ├── recipes.js
 │ └── categories.js
 ├── styles/ # CSS files
-API Services
-The files in services/ are responsible for API calls:
 
-users.js: Functions for user management (login, registration).
+### API Services
 
-recipes.js: Functions for recipe management (uploading, editing, deleting, saving).
+The files in `services/` are responsible for API calls:
 
-categories.js: Functions for category management of recipes.
+-   **users.js**: Functions for user management (login, registration).
+-   **recipes.js**: Functions for recipe management (uploading, editing, deleting, saving).
+-   **categories.js**: Functions for category management of recipes.
 
 ## Technologies
 
-React: For building the application.
-
-React Router: For navigation between pages.
-
-Axios: For making HTTP requests to the server.
-
-JWT: For managing user authentication.
-
-Bootstrap: For fast UI design.
-
-Formik + Yup: For form handling and validation.
-
-React Toastify: For user notification alerts.
+-   **React**: For building the application.
+-   **React Router**: For navigation between pages.
+-   **Axios**: For making HTTP requests to the server.
+-   **JWT**: For managing user authentication.
+-   **Bootstrap**: For fast UI design.
+-   **Formik + Yup**: For form handling and validation.
+-   **React Toastify**: For user notification alerts.
